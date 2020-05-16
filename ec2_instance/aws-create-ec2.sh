@@ -33,10 +33,10 @@ FILE="./$current_time-aws_create_instance_output.txt"
 # Make file readable first variable is command second is output file
 instance_config_sample () {
 	echo "#Security group to be applied to instance"
-	echo "AWS_SECURITY_GRP_ID=sg-0d603a01c354e4b2d"
+	echo "AWS_SECURITY_GRP_ID=sg-0d603a0example"
 	echo ""
 	echo "# SSH Key Name to be used for SSH access"
-	echo "AWS_SSH_KEY_NAME=amazon-ec2-instance-1"
+	echo "AWS_SSH_KEY_NAME=amazon-ec2-instance-14"
 	echo ""
 	echo "# Image EC2 instance will be based on"
 	echo "AWS_IMAGE_ID=ami-0f7919c33c90f5b58"
