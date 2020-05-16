@@ -45,16 +45,16 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
 
 https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html#CreatingSecurityGroups
 
-Store the pem key name and security group id inside a file that you will pass as the second arguement. Also you will to know the instance type and image id the instance will be based on. This information is available from the AWS site and you should note that the image id and instance type are strongly related and wrong choices migh lead to errors.
+Note the ec2 kep pair name and security group id. Also you will need to know the instance type and image id for the instance you intend to deploy. This information is available from the AWS site. The image id and instance type are related and its very easy to pick an image id that is not compatible with a specified instance type.
 
-Your Instance config file should be similar to the instance_config_sample.txt on this repository.
+This informatio will be fed to an Instance config file that should be similar to the instance_config_sample.txt on this repository.
 
 
 Step 6
 
 The script can now be used, For directions on how to use run 
 
-aws-create-ec2 -h
+aws-create-ec2.sh -h
 
 or
 
