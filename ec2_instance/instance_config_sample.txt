@@ -1,6 +1,3 @@
-# Name of your EC2 instance
-AWS_INSTANCE_NAME=ICTLIFE
-
 #Security group to be applied to instance
 AWS_SECURITY_GRP_ID=sg-0d603a01c354e4b2d
 
