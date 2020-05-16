@@ -1,0 +1,15 @@
+# Name of your EC2 instance
+AWS_INSTANCE_NAME=ICTLIFE
+
+#Security group to be applied to instance
+AWS_SECURITY_GRP_ID=sg-0d603a01c354e4b2d
+
+# SSH Key Name to be used for SSH access
+AWS_SSH_KEY_NAME=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+# Image EC2 instance will be based on
+AWS_IMAGE_ID=ami-0f7919c33c90f5b58 
+
+# Number of instances to spin up and the instance type they are to be based on
+AWS_EC2_COUNT=1
+AWS_INSTANCE_TYPE=t2.micro 
