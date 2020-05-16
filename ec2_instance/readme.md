@@ -1,7 +1,7 @@
 # AWS-Script
 A script to deploy EC2 Instances on AWS
 
-This script takes a two arguements, your profile (which defines the region to create the EC2 instance) and a file path for the file that contains your security group id and ssh key name that your instance will be using.
+This script takes a two arguements, your profile (which defines the region to create the EC2 instance) and a file path for the file that contains information about the instance(Instances) you wish to spin up.
 
 
 Step 1: 
@@ -45,14 +45,9 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
 
 https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html#CreatingSecurityGroups
 
-Store the pem key name and security group id inside a file that you will pass as the second arguement.
+Store the pem key name and security group id inside a file that you will pass as the second arguement. Also you will to know the instance type and image id the instance will be based on. This information is available from the AWS site and you should note that the image id and instance type are strongly related and wrong choices migh lead to errors.
 
-The file should contain the below two entries as shown
-
-AWS_SECURITY_GRP_ID=xxxxxxxxxxxxxxxxxx
-
-AWS_SSH_KEY_NAME=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-
+Your Instance config file should be similar to the instance_config_sample.txt on this repository.
 
 
 Step 6
