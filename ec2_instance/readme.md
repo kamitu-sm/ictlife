@@ -20,7 +20,7 @@ Log into you AWS web console and obtain the values for AWS ACCESS KEY ID, AWS SE
 
 Run the command 
 
-aws configure
+    aws configure
 
 Input the values obtained from the web console
 
@@ -28,11 +28,9 @@ Step 4:
 
 The above step should create two files ({HOME}/.aws/credentials) and ({HOME}/.aws/config). Of interest to this script is the config file whose output is as below
 
-[default]
-
-region = us-east-2
-
-output=json
+    [default]
+    region = us-east-2
+    output=json
 
 The value inside the square brackets [default] is the profile name and will be used as an arguement in the script. You can add your own profiles with different regions and with different names as long as they are in the same format as the default profile.
 
