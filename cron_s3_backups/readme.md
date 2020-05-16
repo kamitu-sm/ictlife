@@ -1,7 +1,8 @@
 # AWS-Script
-A script to deploy EC2 Instances on AWS
 
-This script takes a two arguements, your profile (which defines the region to create the EC2 instance) and a file path for the file that contains information about the instance(Instances) you wish to spin up.
+A script to backup data folders to Amazon S3
+
+This script is to be used as a cron entry. Frequency is as per users discretion. Also you can change the data folder as per requirement
 
 
 Step 1: 
@@ -26,13 +27,17 @@ Input the values obtained from the web console
 
 This step should create two files ({HOME}/.aws/credentials) and ({HOME}/.aws/config).
 
+Step 4: 
+
+Log into your AWS web console and create a bucket the will be used by the script. You can Edit the script appropriately to reflect the name of your bucket.
+
 
 Step 5: 
 
-Edit you /etc/crontab file and add the entry below
+Edit you /etc/crontab file and add the entry below. This will run the script daily at 1:00AM as user root
 
-aws-create-ec2 -h
+The format of /etc/crontab is like this:
 
-or
-
-./aws-create-ec2.sh -h
+# Everyday at 1:00AM
+# m h dom mon dow user      command
+0 1 * * *  root  cron_s3_backups.sh
