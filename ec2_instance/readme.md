@@ -52,8 +52,8 @@ Step 6
 
 The script can now be used, For directions on how to use run 
 
-aws-create-ec2.sh -h
+        aws-create-ec2.sh -h
 
 or
 
-./aws-create-ec2.sh -h
+        ./aws-create-ec2.sh -h
