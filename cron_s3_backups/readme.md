@@ -21,7 +21,7 @@ Log into you AWS web console and obtain the values for AWS ACCESS KEY ID, AWS SE
 
 Run the command 
 
-aws configure
+    aws configure
 
 Input the values obtained from the web console
 
@@ -29,13 +29,11 @@ This step should create two files ({HOME}/.aws/credentials) and ({HOME}/.aws/con
 
 Step 4: 
 
-Log into your AWS web console and create a bucket the will be used by the script. You can Edit the script appropriately to reflect the name of your bucket.
+Log into your AWS web console and create a bucket that will be used by the script to store the database backups. You can edit the script appropriately to reflect the name of your bucket.
 
 
 Step 5: 
 
 Edit you /etc/crontab file and add the entry below. This will run the script daily at 1:00AM as user root
 
-The format of /etc/crontab is like this:
-
-0 1 * * *  root  cron_s3_backups.sh
+    0 1 * * *  root  cron_s3_backups.sh
