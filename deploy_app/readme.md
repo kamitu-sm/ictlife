@@ -12,7 +12,16 @@ Install the below packages
     Install goose: go get -u github.com/pressly/goose/cmd/goose
     Install Nginx Web server
     
- Step 2:
- 
- Deploys the 
-    
+Step 2:
+
+Clone the Repository to your prefered location and make sure to make the script file executable. You can also store the script in any executable PATH location.
+
+Step 3:
+
+The script can now be used as
+
+ict_life_deploy 
+
+or
+
+./ict_life_deploy.sh 
