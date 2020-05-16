@@ -18,6 +18,13 @@ Clone the Repository to your prefered location and make sure to make the script 
 
 Step 3:
 
+nginx config
+
+    # path for static files
+    # root /srv/webdata/build;
+
+Step 4:
+
 The script can now be used as
 
 ict_life_deploy 
