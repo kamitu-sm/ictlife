@@ -1,2 +1,3 @@
-# ictlife
-the scripts
+# ICTlife
+
+This scripts are as per operational requirements.
