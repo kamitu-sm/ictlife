@@ -47,7 +47,7 @@ https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html#Creatin
 
 Note the ec2 kep pair name and security group id. Also you will need to know the instance type and image id for the instance you intend to deploy. This information is available from the AWS site. The image id and instance type are related and its very easy to pick an image id that is not compatible with a specified instance type.
 
-This informatio will be fed to an Instance config file that should be similar to the instance_config_sample.txt on this repository.
+This information will be fed to an Instance config file that should be similar to the instance_config_sample.txt on this repository.
 
 
 Step 6
