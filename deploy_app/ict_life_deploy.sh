@@ -5,7 +5,7 @@
 # Be sure to have followed the instructions in the readme for the repository 
 
 repository="https://github.com/ictlife/infra-interview-may-2020.git"
-localFolder="/Users/myname/dev/myfolder"
+localFolder="/home/stephen/dev/myfolder"
 dbFolder="/db/apps/pgdata"
 
 git clone "$repository" "$localFolder"
