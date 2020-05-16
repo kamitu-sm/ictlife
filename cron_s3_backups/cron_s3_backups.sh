@@ -4,14 +4,6 @@
 #
 # Be sure to have followed the instructions in the readme for the repository 
 #
-#####################################################################
-#                                                                   #
-#                                                                   #
-#                     Define Gloabal Variables                      # 
-#                                                                   #
-#                                                                   #
-#####################################################################
-
 # Get the date and time for when the command is run
 current_time=$(date "+%d-%m-%Y--%H-%M")
 echo "Current Time : $current_time"
