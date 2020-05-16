@@ -26,7 +26,7 @@ Input the values obtained from the web console
 
 Step 4: 
 
-The above step should create two files (~/.aws/credentials) and (~/.aws/config). Of interest to this script is the config file whose output is as below
+The above step should create two files ({HOME}/.aws/credentials) and ({HOME}/.aws/config). Of interest to this script is the config file whose output is as below
 
 [default]
 
