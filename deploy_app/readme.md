@@ -27,8 +27,8 @@ Step 4:
 
 The script can now be used as
 
-ict_life_deploy.sh 
+        ict_life_deploy.sh 
 
 or
 
-./ict_life_deploy.sh 
+        ./ict_life_deploy.sh 
