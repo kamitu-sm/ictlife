@@ -34,7 +34,7 @@ region = us-east-2
 
 output=json
 
-The value inside the square brackets [default] is the profile name and will be used as an arguement in the script. You can add your own profiles with different regions and diffent names as long as they are in the same format as the default profile.
+The value inside the square brackets [default] is the profile name and will be used as an arguement in the script. You can add your own profiles with different regions and with different names as long as they are in the same format as the default profile.
 
 
 Step 5: 
