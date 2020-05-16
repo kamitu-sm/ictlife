@@ -1,5 +1,5 @@
-
-Make sure to have done the below
+# ICTLife Deploy Script
+A script to deploy Frontend and Backend onto the same server
 
 The script is as per the Devs Instructions
 
