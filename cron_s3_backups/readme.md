@@ -38,6 +38,4 @@ Edit you /etc/crontab file and add the entry below. This will run the script dai
 
 The format of /etc/crontab is like this:
 
-# Everyday at 1:00AM
-# m h dom mon dow user      command
 0 1 * * *  root  cron_s3_backups.sh
