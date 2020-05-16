@@ -1,7 +1,8 @@
 # AWS-Script
-A script to list resources using the aws cli
+A script to deploy EC2 Instances on AWS
 
-This script takes a single arguement (Your AWS credential file) and lists a couple of resources into a json output like file that can then be parsed programattically or via other shell commands
+This script takes a two arguements, your profile (which defines the region to create the EC2 instance) and a file path for the file that contains your security group id and ssh key name that your instance will be using.
+
 
 Step 1: 
 
@@ -17,21 +18,49 @@ Step 3:
 
 Log into you AWS web console and obtain the values for AWS ACCESS KEY ID, AWS SECRET ACCESS KEY and AWS REGION for the user to be used for running the script.
 
+Run the command 
+
+aws configure
+
+Input the values obtained from the web console
+
 Step 4: 
 
-Create a credentials file and make sure it has the three entries below in the exact shown format, substitute appropriately with the values obtained from step 3 
+The above step should create two files (~/.aws/credentials) and (~/.aws/config). Of interest to this script is the config file whose output is as below
 
-AWS_ACCESS_KEY_ID=xxxxxxxxxxxxxxxxxx
+[default]
 
-AWS_SECRET_ACCESS_KEY=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+region = us-east-2
 
-AWS_DEFAULT_REGION=us-east-2
+output=json
+
+The value inside the square brackets (default) is the profile arguement that will be used in the script. You can add your own profiles with different regions
 
 
-For directions on how to use run 
+Step 5: 
 
-aws-script -h
+Log into the AWS console, unders EC2 and create both a ssh key and a security group (you will need its ID)
+
+https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html
+
+https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html#CreatingSecurityGroups
+
+Store the pem key name and security group id inside a file that you will pass as the second arguement.
+
+The file should contain the below two entries as shown
+
+AWS_SECURITY_GRP_ID=xxxxxxxxxxxxxxxxxx
+
+AWS_SSH_KEY_NAME=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+
+Step 6
+
+The script can now be used, For directions on how to use run 
+
+aws-create-ec2 -h
 
 or
 
-./aws-script -h
+./aws-create-ec2.sh -h
