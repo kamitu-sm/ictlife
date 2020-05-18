@@ -18,10 +18,10 @@ Clone the Repository to your prefered location and make sure to make the script 
 
 Step 3:
 
-nginx config
+Add the following configuration to your nginx config. It will be used for the frontend
 
     # path for static files
-    # root /srv/webdata/build;
+    root /srv/webdata/build;
 
 Step 4:
 
