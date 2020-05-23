@@ -12,19 +12,19 @@ The architecture includes the following features depending on the requirements b
     4. VPC peering between the management and production VPC to allow for management of the production infrastructure.
     5. Network access control list (network ACL) rules on subnets to filter traffic.
     6. Security groups for EC2/DB associated compute resources for easy firewall rule grouping and as an additional security measure. Remember to restrict SSH/Management traffic to the bastion host only.
-2. Protect Cardholder Data
+2. ***Protect Cardholder Data***
     1. SSL enabled load balancers for all customer traffic, disable all http traffic.
     2. PCI-compliant password policy for website customers
     3. Encrypted EBS or Amazon RDS for DB compute resources
-3. Maintain a Vulnerability Management Program
+3. ***Maintain a Vulnerability Management Program***
     1. Installing antivirus software or programs to protect systems against malware.
-4. Implement Strong Access Control Measures
+4. ***Implement Strong Access Control Measures***
     1. A secured bastion login host to facilitate command-line Secure Shell (SSH) access to Amazon Elastic Compute Cloud (Amazon EC2) instances for troubleshooting and systems administration activities.
     2. Basic AWS Identity and Access Management (IAM) configuration with custom IAM policies, with associated groups, roles, and instance profiles. Roles are to be assigned appropriately to different administrators. PCI-compliant password policy for IAM users
-5. Monitor and Test Networks Regularly
+5. ***Monitor and Test Networks Regularly***
     1. Monitor activities on the bastion host. This could employ CyberArk or similar products that will provide visibility on all activities carried out by system and database administrators.
     2. Vulnerability management servers which include logging servers (splunk, grafana, ELK), vulnerability scanners and antivirus managers. AWS tools such as CloudWatch could be employed too as logging servers.
-6. Maintain an Information Security Policy (Not Architectured)
+6. ***Maintain an Information Security Policy (Not Architectured)***
     1. A reference policy must document the steps and procedures that need to be followed by all personnel handling secure data.
 
 
