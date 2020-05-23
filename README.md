@@ -1,3 +1,3 @@
 # ICTlife
 
-This scripts are as per operational requirements.
+As per operational requirements.
