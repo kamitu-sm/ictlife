@@ -15,7 +15,7 @@ The architecture includes the following features depending on the requirements b
 2. ***Protect Cardholder Data***
     1. SSL enabled load balancers for all customer traffic, disable all http traffic.
     2. PCI-compliant password policy for website customers
-    3. Encrypted EBS or Amazon RDS for DB compute resources (Encrypted all database backups and archives)
+    3. Encrypted EBS or Amazon RDS for DB compute resources (Encrypt all database backups and archives)
 3. ***Maintain a Vulnerability Management Program***
     1. Installing antivirus software or programs to protect systems against malware.
     2. Employing AWS Shield and AWF WAF on traffic to application load balancers
