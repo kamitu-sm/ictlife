@@ -1,5 +1,5 @@
-Architecture 
-========================
+PCI Compliant AWS Architecture 
+==============================
 
 ![picture alt](https://raw.githubusercontent.com/kamitu-sm/ictlife/master/PCI_Architecure/pci-dss-on-aws.png "PCI ARCHITECTURE") 
 
