@@ -9,20 +9,31 @@ The architecture includes the following features depending on the requirements b
     1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
     2. Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.
     3. Only load balancers are allowed in production public subnets, alternatively one could employ AWS load balancers.
-2. Which is numbered
+    4. VPC peering between the management and production VPC to allow for management of the production infrastructure.
+    5. Network access control list (network ACL) rules on subnets to filter traffic.
+    6. Security groups for EC2/DB associated compute resources for easy firewall rule grouping and as an additional security measure. Remember to restrict SSH/Management traffic to the bastion host only.
+2. Protect Cardholder Data
+    1. SSL enabled load balancers for all customer traffic, disable all http traffic.
+    2. PCI-compliant password policy for website customers
+    3. Encrypted EBS or Amazon RDS for DB compute resources
+3. Maintain a Vulnerability Management Program
+    1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
+4. Implement Strong Access Control Measures
+    1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
+5. Monitor and Test Networks Regularly
+    1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
+6. Maintain an Information Security Policy
+    1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
 
-  1. 
-  2. 
-  3. 
-  4. VPC peering between the management and production VPC to allow for management of the production infrastructure.
-  5. Network access control list (network ACL) rules on subnets to filter traffic.
-  6. Security groups for EC2/DB associated compute resources for easy firewall rule grouping and as an additional security measure. Remember to restrict SSH/Management traffic to the bastion host only.
+
+
+
 
 2. Protect Cardholder Data
 
-SSL enabled load balancers for all customer traffic, disable all http traffic
-PCI-compliant password policy for website customers
-Encrypted EBS or Amazon RDS for DB compute resources
+
+
+
 
 3. Maintain a Vulnerability Management Program
 
