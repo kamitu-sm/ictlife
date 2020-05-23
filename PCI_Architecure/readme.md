@@ -18,7 +18,7 @@ The architecture includes the following features depending on the requirements b
     3. Encrypted EBS or Amazon RDS for DB compute resources (Encrypted all database backups and archives)
 3. ***Maintain a Vulnerability Management Program***
     1. Installing antivirus software or programs to protect systems against malware.
-    2. Employing AWS Shield and AWF WAF on application load balancers
+    2. Employing AWS Shield and AWF WAF on traffic to application load balancers
 4. ***Implement Strong Access Control Measures***
     1. A secured bastion login host to facilitate command-line Secure Shell (SSH) access to Amazon Elastic Compute Cloud (Amazon EC2) instances for troubleshooting and systems administration activities.
     2. Basic AWS Identity and Access Management (IAM) configuration with custom IAM policies, with associated groups, roles, and instance profiles. Roles are to be assigned appropriately to different administrators. PCI-compliant password policy for IAM users
