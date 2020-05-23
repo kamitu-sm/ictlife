@@ -6,18 +6,12 @@ PCI Compliant AWS Architecture
 The architecture includes the following features depending on the requirements being addressed:
 
 1. Construct and Maintain a Secure Network
-
-Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
-
-Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.
-
-Only load balancers are allowed in production public subnets, alternatively one could employ AWS load balancers.
-
-VPC peering between the management and production VPC to allow for management of the production infrastructure.
-
-Network access control list (network ACL) rules on subnets to filter traffic.
-
-Security groups for EC2/DB associated compute resources for easy firewall rule grouping and as an additional security measure. Remember to restrict SSH/Management traffic to the bastion host only.
+  1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
+  2. Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.
+  3. Only load balancers are allowed in production public subnets, alternatively one could employ AWS load balancers.
+  4. VPC peering between the management and production VPC to allow for management of the production infrastructure.
+  5. Network access control list (network ACL) rules on subnets to filter traffic.
+  6. Security groups for EC2/DB associated compute resources for easy firewall rule grouping and as an additional security measure. Remember to restrict SSH/Management traffic to the bastion host only.
 
 2. Protect Cardholder Data
 
