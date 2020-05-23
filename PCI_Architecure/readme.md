@@ -1,10 +1,7 @@
 Architecture 
 ========================
 
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-![picture alt](https://raw.githubusercontent.com/kamitu-sm/ictlife/master/PCI_Architecure/pci-dss-on-aws.png "Title is optional") 
+![picture alt](https://raw.githubusercontent.com/kamitu-sm/ictlife/master/PCI_Architecure/pci-dss-on-aws.png "PCI ARCHITECTURE") 
 
 The architecture includes the following features depending on the requirements being addressed:
 
