@@ -5,7 +5,7 @@ PCI Compliant AWS Architecture
 
 The architecture includes the following features depending on the requirements being addressed:
 
-1. Construct and Maintain a Secure Network
+1. ***Construct and Maintain a Secure Network***
     1. Standard, external-facing virtual private cloud (VPC) Multi-AZ architecture with separate subnets for different application tiers and private (back-end) subnets for the application and the database.
     2. Managed network address translation (NAT) gateways to allow outbound internet access for resources in the private subnets.
     3. Only load balancers are allowed in production public subnets, alternatively one could employ AWS load balancers.
