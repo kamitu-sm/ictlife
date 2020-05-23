@@ -29,6 +29,7 @@ The architecture includes the following features depending on the requirements b
 
 
 ***What is meant by PCI compliant password policy?***
+
 The following requirements must be met for a password policy to be considered PCI-DSS compliant
 1. Require a minimum length of at least seven characters.
 2. Contain both numeric and alphabetic characters.
