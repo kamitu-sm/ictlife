@@ -1,4 +1,6 @@
 Architecture rationale
+========================
+
 
 The architecture includes the following features depending on the requirements being addressed:
 
