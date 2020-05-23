@@ -1,7 +1,7 @@
 PCI Compliant AWS Architecture 
 ==============================
 
-![picture alt](https://raw.githubusercontent.com/kamitu-sm/ictlife/master/PCI_Architecure/pci-dss-on-aws.png "PCI ARCHITECTURE") 
+![picture alt](https://github.com/kamitu-sm/ictlife/blob/master/PCI_Architecure/aws-pci-compliant-architecture.png "PCI ARCHITECTURE") 
 
 The architecture includes the following features depending on the requirements being addressed:
 
